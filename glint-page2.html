@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Glints</title>
+    <link rel="shortcut icon" href="../public/image/aks-logo3.png">
+</head>
+<body>
+    <style>
+         header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: black;
+        color: rgba(255, 255, 255, 0.411);
+        padding-top: 0px;
+        font-family: cursive;
+        position: sticky;
+        padding: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
+        text-align: center;
+
+        height: 100px;
+        border-left: 100px;
+        transition: 1s;
+
+    }
+    header:hover{
+        background-color:rgb(146, 121, 121);
+        color: black;
+
+    }
+    select{
+        background-color: transparent;
+        color: white;
+        font-weight: 100;
+        border-radius: 10PX;
+        border: none;
+
+    
+    }
+    main{
+        background-color: black;
+    }
+
+   .main-div1{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    color: white;
+    font-weight: bolder;
+   }
+   .main-div4{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4FR;
+    color: white;
+    font-weight: bolder;
+
+   }
+   button{
+    background-color: aqua;
+    font-size: x-large;
+    padding: 15px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   button:hover{
+    background-color: rgb(32, 192, 104);
+    transition: 1s;
+
+
+   }
+   .sub-div2{
+    padding-left: 200px;
+    margin-top: -100px;
+    font-size: 200px;
+   }
+   
+  
+   .sub-div1{
+    padding: 30px;
+    padding-left: 100px;
+    animation-name: uptodown;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   }
+   .green-text{
+    color: rgba(172, 255, 47, 0.603);
+   }
+   .sub-div2{
+    background-image: url("../public/");
+   }
+   .CART2-DIV{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 30px;
+    padding-left: 90px;
+    padding-right: 30px;
+    gap: 20px;
+    position: static;
+
+
+   }
+   .cart2{
+    height: 400PX;
+    width: 300PX;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    transition: 1.5s;
+   }
+   .cart2:hover{
+    background-color: rgb(32, 192, 104);
+    transition: 1s;
+   }
+   .cart-middle{
+    height: 400PX;
+    width: 300PX;
+    text-align: center;
+    background-color: rgb(32, 192, 104);
+    color: white;
+
+   }
+   .cart2-body{
+    padding-top: 50px;
+    padding-bottom: 30px;
+   }
+   .main-div2{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 20px;
+    padding-left: 20px;
+    text-align: center;
+    margin-top: 30px;
+   }
+   .cart{
+    height:250px;
+    width: 300px;
+    background-color: rgba(240, 248, 255, 0.144);
+    padding: 20px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px 1px ;
+
+
+   }
+   .cart:hover{
+    transform: scale(1.1);
+    transition: 1s;
+   }
+   .cart-body{
+    padding-top: 20px;
+    font-weight: bold;
+   }
+   .green-text:hover{
+    color: aqua;
+
+   }
+   .cart-footer{
+    text-align: justify;
+    padding-top:20px;
+
+   }
+   .for-cart{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+   .CART3-DIV{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 30px;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+   }
+   .card3{
+    height: 370px;
+    border: 10px solid gray;
+    border-radius: 10px;
+    width: 310px;
+   }
+   .series{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(144, 238, 144, 0.479);
+        color: green;
+        font-weight: bolder;
+        height: 300px;
+        margin-top: 100px;
+
+   }
+   .small-black{
+    color: black;
+   }
+   .card3-blog{
+    height: 400PX;
+    width: 285PX;
+    background-color: whitesmoke;
+    color: black;
+    text-align: left;
+    
+   }
+   .FOR-CARD3{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 30px;
+    gap: 30px;
+
+   }
+   .card3-body{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+   }
+   .card3-blog:hover{
+    color: rgb(32, 192, 104) ;
+   }
+   .card3-footer{
+    color: rgb(32, 192, 104);
+   }
+   .main-div3{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 20px;
+    margin-top: 30px;
+
+   }
+   .main-div4{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: 50px;
+   }
+   input{
+    background-color: transparent;
+    font-size: x-large;
+    padding: 15px;
+    border-radius: 20px;
+    border-color:  aqua;
+    color: aliceblue;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   .for-position{
+    text-align: center;
+    margin-top: 100px;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: antiquewhite;
+   }
+   .man-img{
+    gap: 10px;
+    margin-top: 150px;
+   }
+   .footer-img{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr  3fr;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding: 50px;
+
+   }
+   footer{
+    background-color: rgba(0, 0, 0, 0.637);
+   }
+   .Footer-all-span{
+    text-align: center;
+    margin-top: 100px;
+    font-size: x-large;
+    font-weight: bolder;
+   }
+   .Footer-span{
+    padding: 20px;
+   }
+   .Footer-span:hover{
+    color: rgb(32, 192, 104);
+   }
+   select{
+    width: 80px;
+   }
+   option{
+    background-color: aquamarine;
+    color: black;
+    font-style:unset;
+
+
+   }
+   a{
+    text-decoration: none;
+    color: white;
+    
+   }
+   @keyframes uptodown{
+    from{
+        margin-top: -500px;
+        transition: 60s;
+
+        
+
+    }
+    
+    to{
+        margin-bottom: 0px;
+        transition: 50s;
+    }
+   }
+   @keyframes righttoleft{
+     form{
+        margin-right: 0px;
+        color: aqua;
+        background-image: Repeating-radial-gradient(32, 192, 104);
+    }
+     to{
+        margin-left: 100%;
+        background-color: rgb(32, 192, 104);
+        
+
+     }
+   }
+
+    @keyframes lefttoright{
+     form{
+        margin-left: 0px;
+        color: aqua;
+        background-image: Repeating-radial-gradient(32, 192, 104);
+    }
+     to{
+        margin-right: 100%;
+        background-color: rgb(32, 192, 104);
+        
+
+     }
+   }
+
+
+    </style>
+    
+</body>
+<header>
+    <div>
+        <img src="../public/image/glint-logo.png" width="100px" height="40px">
+    </div>
+
+
+    <div class="header-row1">
+        <span>
+            <select>
+                HOME
+                <option>HOME</option>
+                <hr>
+                <option value="HOME PAGE1"><a href="./glinnt.html">HOME PAGE1</a> </option>
+                <option value="HOME PAGE2"> <a href="./glint-page2.html">HOME PAGE2</a> </option>
+               
+               
+
+            </select>
+        </span>
+
+        <span>
+            <A href="#PORT">ABOUT</A>
+        </span>
+
+        <span>
+            
+            <a href="#SERVICE"> SERVICES </a>
+        </span>
+
+        <span>
+            <a href="#PORTFOLIO">PORTFOLIO</a>
+        </span>
+        <span>
+            <select>
+                <option>PAGES</option>
+                <hr>
+                <option value="ABOUT">ABOUT</option>
+                <option value="PORTFOLIO">PORTFOLIO</option>
+                <option value="PORTFOLIO-DETAILS">PORTFOLIO DETAILS</option>
+                <option value="BLOG">BLOG</option>
+                <option value="SINGLE-BLOG">SINGLE BLOG</option>
+                <option value="CONTACT-US">CONTACT US</option>
+
+            </select>
+        </span>
+
+        <span class="bi bi-search">
+            <select>
+                <option> <span>SEARCH</span>  </option>
+            </select>
+        </span>
+    </div>
+
+    <div>
+        <span class="bi bi-grid-3x3-gap-fill"></span>
+    </div>
+
+</header>
+
+<div class="conditioner">
+    <main>
+        <div class="main-div1">
+            <div class="sub-div1">
+                <h1>
+                    <span class="green-text">IMAGINATION</span> IS MORE<BR>
+                        IMPORTANAT THAN KNOWLEDGE
+                </h1>
+                <P>Together we the people achieve more than any single person <br>
+                could ever do alonen </P>
+                <button>GETTING STARTED <SPAN class="bi bi-chevron-right"></SPAN> </button>
+
+            </div>
+
+
+            <div class="sub-div2">
+                <img src="../public/image/Glint-img-man1.png">
+                
+            </div>
+
+        </div>
+        </main>
+
+        <section>
+            <DIV class="CART2-DIV">
+                <DIV class="cart2">
+                    <div class="cart2-body">
+                        <figure>
+                            <img src="../public/image/design-principle.png">
+                            <figcaption> <h1><span class="green-text">DESIGN PRINCIPLES</span> </h1> </figcaption>
+                        </figure>
+
+                    </div>
+
+
+                    <div class="cart2-footer">
+                        <P>Need a project completed by an expert? 
+                            Let's go! Access a Human Resources Consultant to answer q
+                            uestions</P>
+                    </div>
+
+
+
+                </DIV>
+
+                <DIV class="cart-middle" id="SERVICE">
+                   <div class="cart2-body">
+                    <figure>
+                        <img src="../public/image/uniq-value.png"><br><br>
+                        <figcaption> <h1><span>UNIQUE VALUE</span> </h1> </figcaption>
+                    </figure>
+
+                   </div>
+
+                    <div class="cart2-footer">
+                        <P>Need a project completed by an expert? 
+                            Let's go! Access a Human Resources Consultant to answer q
+                            uestions</P>
+                    </div>
+
+
+
+                </DIV>
+
+
+                <DIV class="cart2">
+                   <div class="cart2-body">
+                    <figure>
+                        <img src="../public/image/style-componet.png">
+                        <figcaption> <h1><span class="green-text">STYLE COMPONETS</span> </h1> </figcaption>
+                    </figure>
+
+                   </div>
+
+                    <div class="cart2-footer">
+                        <P>Need a project completed by an expert? 
+                            Let's go! Access a Human Resources Consultant to answer q
+                            uestions</P>
+                    </div>
+
+
+
+                </DIV>
+
+            </DIV>
+
+            <div class="main-div2" >
+                <div>
+                    <span class="green-text">MY EXPERIENCE</span><BR>
+                        <H1>EXPERIENCE AND<SPAN class="green-text">SKILL</SPAN> </H1>
+
+
+                </div>
+
+
+                <div>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut 
+                        modi culpa cumque earum dignissimos perferendis velit quibusdam vel 
+                        nobis blanditiis totam natus nesciunt, autem officiis rerum maiores 
+                        repudiandae eligendi?</P>
+
+                </div>
+
+            </div>
+
+            <div class="for-cart ">
+
+               
+                <div class="cart" >
+                    <div class="cart-header">
+                        2011-2014(UI DESIGNER)
+                    </div>
+
+
+                    <div class="cart-body">
+                        <SPAN class="green-text">GOOGLE CORPORATION.</SPAN>
+
+                    </div>
+
+                    <div class="cart-footer">
+                        All You Need To Do Your Best Work Together In One Package
+                            Works Seamlessly Computer 
+
+                    </div>
+
+
+                </div>
+
+                <div class="cart">
+                    <div class="cart-header">
+                        2011-2014(UI DESIGNER)
+                    </div>
+
+
+                    <div class="cart-body">
+                        <SPAN class="green-text">APPLE PRODUCT.</SPAN>
+
+                    </div>
+
+                    <div class="cart-footer">
+                        All You Need To Do Your Best Work Together In One Package
+                            Works Seamlessly Computer 
+
+                    </div>
+
+
+                </div>
+
+                <div class="cart">
+                    <div class="cart-header">
+                        2011-2014(UI DESIGNER)
+                    </div>
+
+
+                    <div class="cart-body">
+                        <SPAN class="green-text">LEAD DESIGNER MUSICSOFT</SPAN>
+
+                    </div>
+
+                    <div class="cart-footer">
+                        All You Need To Do Your Best Work Together In One Package
+                            Works Seamlessly Computer 
+
+                    </div>
+
+
+                </div>
+
+                <div class="cart">
+                    <div class="cart-header">
+                        2011-2014(UI DESIGNER)
+                    </div>
+
+
+                    <div class="cart-body">
+                        <SPAN class="green-text">LBRUNO MARS AS.</SPAN>
+
+                    </div>
+
+                    <div class="cart-footer">
+                        All You Need To Do Your Best Work Together In One Package
+                            Works Seamlessly Computer 
+
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+            <div class="main-div2" >
+                <div>
+                    <span class="green-text">WORKING PROCESS</span><BR>
+                        <H1>LATEST WORKING<SPAN class="green-text">PROJECT</SPAN> </H1>
+
+
+                </div>
+
+
+                <div>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut 
+                        modi culpa cumque earum dignissimos perferendis velit quibusdam vel 
+                        nobis blanditiis totam natus nesciunt, autem officiis rerum maiores 
+                        repudiandae eligendi?</P>
+
+                </div>
+
+            </div>
+
+            <div class="CART3-DIV">
+                <div class="shade">
+                    <div class="card3">
+                        <img src="../public/image/latest-card1.png">
+                    </div>
+
+                </div>
+
+               <div class="shade">
+                <div class="card3">
+                    <img src="../public/image/latest-card1.png">
+
+                </div>
+
+               </div>
+
+               <div class="shade">
+                <div class="card3">
+                    <img src="../public/image/latest-card1.png">
+
+                </div>
+
+
+               </div>
+
+            </div>
+            <DIV class="series">
+                <div>
+                    <span class="bi bi-emoji-smile" style="font-size: xx-large;"></span><br>
+                    <span>6853</span><br>
+                    <span class="small-black">Happy Client</span>
+                </div>
+
+                <div>
+                    <span class="bi bi-clock" style="font-size: xx-large;"></span><br>
+                    <span>120</span><br>
+                    <span class="small-black">Support Team</span>
+                </div>
+
+                <div>
+                    <span class="bi bi-sliders2" style="font-size: xx-large;"></span><br>
+                    <span>345</span>
+                    <span class="small-black">Sales Count</span>
+                </div>
+
+                <div>
+                    <span class="bi bi-trophy" style="font-size: xx-large;"></span><br>
+                    <span>195</span><br>
+                    <span class="small-black">Awward</span>
+                </div>
+
+            </DIV>
+
+
+
+            <DIV class="main-div4">
+
+                <div>
+                    <span class="green-text">what we do</span><BR>
+                        <H1>SERVICE AND<SPAN class="green-text">SOULATION</SPAN> </H1>
+
+
+                </div>
+
+
+                <div>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut 
+                        modi culpa cumque earum dignissimos perferendis velit quibusdam vel 
+                        nobis blanditiis totam natus nesciunt, autem officiis rerum maiores 
+                        repudiandae eligendi?</P>
+
+                </div>
+                <div>
+                   <button  class="bi bi-chevron-left bg-transparent"></button> 
+                   <button  class="bi bi-chevron-left bg-transparent"></button>
+
+                </div>
+
+
+
+             </DIV>
+
+             <DIV class="CART2-DIV">
+                <DIV class="cart2">
+                    <div class="cart2-body">
+                        <figure>
+                            <img src="../public/image/design-principle.png">
+                            <figcaption> <h1><span class="green-text">INFLUENCER</span>
+                                 </h1><P>Best For Small Investors</P> </figcaption>
+                        </figure>
+                        <HR>
+
+                    </div>
+                    
+
+
+                    <div class="cart2-footer">
+                        <SPAN class="green-text" style="font-size: 20px; font-weight: bolder; ">$104</SPAN><br>
+                        <p>Per Month</p>
+                        <button class="DOLLER">READ MORE <SPAN class="BI bi-chevron-right"></SPAN> </button>
+                    </div>
+
+
+
+                </DIV>
+
+                <DIV class="cart-middle">
+                   <div class="cart2-body">
+                    <figure>
+                        <img src="../public/image/uniq-value.png"><br><br>
+                        <figcaption> <h1><span>AGENCY</span> </h1> <P>Best For Small Investors</P></figcaption>
+                    </figure>
+                    <HR>
+
+                   </div>
+
+                    <div class="cart2-footer " style="margin-top:-20px;">
+                        <SPAN class="green-text" style="font-size: 20px; font-weight: bolder; ">$204</SPAN><br>
+                        <p>Per Month</p>
+                        <button>READ MORE <SPAN class="bi bi-chevron-right"></SPAN> </button>
+                    </div>
+
+
+
+                </DIV>
+
+
+                <DIV class="cart2">
+                   <div class="cart2-body">
+                    <figure>
+                        <img src="../public/image/style-componet.png">
+                        <figcaption> <h1><span class="green-text" style="font-size: 20px; font-weight: bolder; ">ENTERPRISE</span> </h1><P>Best For Small Investors</P> </figcaption>
+                    </figure>
+                    <HR>
+
+                   </div>
+                   
+
+                    <div class="cart2-footer">
+                        <SPAN class="green-text text-white" style="font-size: 20px; font-weight: bolder; ">LET'S CHART</SPAN><br>
+                        <p>Per Month</p>
+                        <button class="DOLLER">READ MORE <SPAN class="BI bi-chevron-right"></SPAN> </button>
+                    </div>
+
+
+
+                </DIV>
+
+            </DIV>
+
+            <DIV class="main-div3">
+
+                <div>
+                    <span class="green-text">RECENT NEWS DESK</span><BR>
+                        <H1>LATEST NEWS &<SPAN class="green-text">BLOG</SPAN> </H1>
+
+
+                </div>
+
+
+                <div>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aut 
+                        modi culpa cumque earum dignissimos perferendis velit quibusdam vel 
+                        nobis blanditiis totam natus nesciunt, autem officiis rerum maiores 
+                        repudiandae eligendi?</P>
+
+                </div>
+                <div>
+                   <button  class="bi bi-arrow-left bg-transparent"></button> 
+                   <button  class="bi bi-arrow-right bg-transparent"></button>
+
+                </div>
+
+
+
+             </DIV>
+
+             <DIV class="FOR-CARD3">
+                <div class="card3-blog">
+                    <div class="card3-header">
+                       <figure>
+                        <img src="../public/image/latest-blog1.png">
+                        <figcaption> <span style="color: black;">September 28,2019</span> </figcaption>
+
+                       </figure>
+                    </div>
+                    <div class="card3-body">
+                        <span>ADDICTION WHEN GAMBLING BECOMES...</span>
+
+                    </div>
+                    <div class="card3-footer">
+                        <SPAN>READ MORE</SPAN>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="card3-blog">
+                    <div class="card3-header">
+                       <figure>
+                        <img src="../public/image/latest-blog2.png">
+                        <figcaption> <span style="color: black;">September 28,2019</span> </figcaption>
+
+                       </figure>
+                    </div>
+                    <div class="card3-body">
+                        <span>HYPNOSIS 12 STEPS TO ACQUIRE MIND POWER..</span>
+
+                    </div>
+                    <div class="card3-footer">
+                        <SPAN>READ MORE</SPAN>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="card3-blog">
+                    <div class="card3-header">
+                       <figure>
+                        <img src="../public/image/latest-bolg3.png">
+                        <figcaption> <span style="color: black;">September 28,2019</span> </figcaption>
+
+                       </figure>
+                    </div>
+                    <div class="card3-body">
+                        <span>ADDICTION WHEN GAMBLING BECOMES...</span>
+
+                    </div>
+                    <div class="card3-footer">
+                        <SPAN>READ MORE</SPAN>
+
+                    </div>
+
+
+                </div>
+             </DIV>
+
+             <DIV class="for-position">
+                <div>
+                    <span class="green-text" style="font-size: small;">NEWSLETTER</span><BR>
+                </div>
+
+                <div>
+                    <span> STAY UP TO DATE, SUBSCRIBE <BR>
+                    TO THE FREE <SPAN class="green-text"> NEWSLETTER</SPAN> </span>
+                    
+                </div>
+                <div class="mt-5">
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                    <button>SUBSCRIBE <SPAN class="bi bi-wechat"></SPAN> </button>
+                </div>
+                <div class="man-img">
+                    <img src="../public/image/glint-homepage2-pic1.png">
+                    <img src="../public/image/Home-page2-pic2.png">
+                    <img src="../public/image/glient-hompage2-pic3.png">
+                    <img src="../public/image/glient-hommepage2-pic4.png"> 
+
+                </div>
+             </DIV>
+
+            
+            
+
+        </section>
+
+
+        <footer>
+            <div class="footer-img">
+                <div><img src="../public/image/glient-footer-pic1.png">
+                </div>
+                <div>
+                    <img src="../public/image/glient-footer-pic3.png">
+
+                </div>
+                <div>
+                    <img src="../public/image/glient-footer-pic4.png">
+
+                </div>
+                <div>
+                    <img src="../public/image/glient-footer-pic5.png">
+
+                </div>
+
+
+
+            </div>
+            <div class="Footer-all-span">
+                <span class="Footer-span"> ABOUT ME</span>
+                <SPAN class="Footer-span">CAREER</SPAN>
+                <SPAN class="Footer-span">BLOG</SPAN>
+                <SPAN class="Footer-span">GALLERY</SPAN>
+                <SPAN class="Footer-span">CONTACT ME</SPAN>
+            </div>
+
+            <div style="text-align: center; margin-top: 100PX; font-size: small;"> COPYRIGHT &COPY;2019 BY<SPAN class="green-text">QUOMODTHEME</SPAN>ALL RIGHT RESERVED</div>
+
+
+
+        </footer>
+
+
+</div>
+
+</html>
